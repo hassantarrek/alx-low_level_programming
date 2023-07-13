@@ -1,15 +1,13 @@
-#!/bin/bash
 #include <stdio.h>
 /**
- *main - entry point
+ * main - Entry point
  *
- *return: always return 0
+ * return: always return 0 (Success)
  *
- *@void: this is a parameter 
+ * @void: this is a parameter
  */
 int main(void)
 {
-	int str("Programming is like building a multilingual puzzle/n);
-	puts(str);
+	puts("\"Programming is like building a multilingual puzzle");
 		return (0);
 }
