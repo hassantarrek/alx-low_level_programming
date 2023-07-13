@@ -1,1 +1,1 @@
-this directory for first C projects
+This directory for first C projects
