@@ -2,7 +2,9 @@
 /**
  * main - Entry point
  *
- * return: always return 0 (Success)
+ * Description: a code that uses puts function
+ *
+ * Return: Always return 0 (Success)
  *
  * @void: this is a parameter
  */
