@@ -1,13 +1,13 @@
 #include <stdio.h>
 #include <unistd.h>
-/*
+/**
  * main - Entry point
  *
- * Description: main function uses write function
+ * Description: main function who uses write
  *
  * int - additional function
  *
- * Description: int function helps the write function
+ * DescriptionForInt: int function helps the write function
  *
  * @void: Is a parameter
  *
@@ -17,8 +17,8 @@
 int main(void)
 {
 	char x[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-	write(2,
-	x, 59);
+
+	write(2, x, 59);
 
 	return (1);
 }
