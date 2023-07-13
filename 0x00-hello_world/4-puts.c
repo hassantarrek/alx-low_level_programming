@@ -5,10 +5,11 @@
  *
  *return: always return 0
  *
+ *@void: this is a parameter 
  */
 int main(void)
 {
-	int str(with proper grammar, but the outcome is a piece of art, /n);
+	int str("Programming is like building a multilingual puzzle/n);
 	puts(str);
 		return (0);
 }
