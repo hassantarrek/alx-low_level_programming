@@ -14,6 +14,10 @@ int main(void)
 	for (abdo = 48; abdo <= 57; abdo++)
 	{
 		putchar(abdo);
+		if (abdo == 57)
+		{
+			continue;
+		}
 		putchar(',');
 		putchar(' ');
 	}
