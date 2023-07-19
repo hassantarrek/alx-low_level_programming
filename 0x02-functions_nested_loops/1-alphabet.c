@@ -1,15 +1,16 @@
-#include <stdio.h>
 #include "main.h"
 /**
- * main - Starting point
+ * print_alphabet - uses _putchar to print lowercase alphabet
  *
- * Description: 0-putchar.c
- *
- * Return: always 0
- *
+ * Return: void
  */
-int main(void)
+void print_alphabet(void)
 {
-	printf("abcdefghijklmnopqrstuvwxyz\n");
-	return (0);
+	int x;
+
+	for (x = 'a'; x <= 'z'; x++)
+	{
+		_putchar(x);
+	}
+	_putchar('\n');
 }
