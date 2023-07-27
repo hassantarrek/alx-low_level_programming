@@ -9,21 +9,21 @@
 char *_strncat(char *dest, char *src, int n)
 {
 	int x;
-        int y;
+	int y;
 
-        x = 0;
+	x = 0;
 
-        while (dest[x])
-        {
-                x++;
-        }
-        y = 0;
+	while (dest[x])
+	{
+		x++;
+	}
+	y = 0;
 
-        while (y < n && src[y] != 0)
-        {
-                dest[y + x] = src[y];
-                y++;
-                x++;
-        }
-        return (dest);
+	while (y < n && src[y] != 0)
+	{
+		dest[x + y] = src[y];
+		dest[x + y] = 0;
+		y++;
+	}
+	return (dest);
 }
