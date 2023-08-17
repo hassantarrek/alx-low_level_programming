@@ -9,7 +9,7 @@
  */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	long unsigned int x;
+	unsigned long int x;
 
 	if (array == NULL || action == NULL)
 	{
