@@ -1,1 +1,1 @@
-0x06. C - More pointers, arrays and strings
+This file for the first sprint in ALX SE programe
