@@ -1,4 +1,45 @@
 #include "main.h"
+void close_file(int hs);
+char *create_buffer(char *file);
+
+/**
+ * create_buffer - Allocates 1024 bytes
+ * @file: name of the file buffer
+ * Return: pointer
+ */
+
+char *create_buffer(char *file)
+{
+	char *buffer;
+
+	buffer = malloc(sizeof(char) * 1024);
+	if (buffer == NULL)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file);
+		exit(99);
+	}
+	return (buffer);
+}
+
+/**
+ * close_file - Closes file descriptors
+ * @hs: The file descriptor to be closed
+ * Return: void
+ */
+
+void close_file(int hs)
+{
+	int x;
+
+	x = close(hs);
+
+	if (x == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", hs);
+		exit(100);
+	}
+}
+
 /**
  * main - Main function for the task
  * @argc: number of arguments
